@@ -1,0 +1,9 @@
+/home/seq/tools/installed/tophat-1.4.1.Linux_x86_64/long_spanning_reads: /lib64/libz.so.1: no version information available (required by /home/seq/tools/installed/tophat-1.4.1.Linux_x86_64/long_spanning_reads)
+long_spanning_reads v1.4.1 (exported)
+--------------------------------------------
+Opening sim_run/50x_75/tophat_1.4.1/tmp/right_kept_reads.m2g_um.bwtout.z for reading
+Loading reference sequences...
+        reference sequences loaded.
+Loading spliced hits...done
+Loading junctions...done
+Loading deletions...done

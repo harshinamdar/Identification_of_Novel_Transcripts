@@ -1,0 +1,17 @@
+/home/seq/tools/installed/tophat-1.4.1.Linux_x86_64/segment_juncs: /lib64/libz.so.1: no version information available (required by /home/seq/tools/installed/tophat-1.4.1.Linux_x86_64/segment_juncs)
+segment_juncs v1.4.1 (exported)
+---------------------------
+Loading reference sequences...
+>> Performing segment-search:
+Loading left segment hits...
+Microaligned 0 segments
+done.
+Loading right segment hits...
+Microaligned 0 segments
+done.
+	found 10688 potential split-segment junctions
+	found 77 potential small deletions
+	found 133 potential small insertions
+Reported 10688 total possible splices
+Reporting potential deletions...
+Reporting potential insertions...

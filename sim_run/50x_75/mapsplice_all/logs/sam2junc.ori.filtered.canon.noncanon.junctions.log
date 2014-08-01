@@ -1,0 +1,5 @@
+sim_run/50x_75/mapsplice_all/tmp/original/original_paired.sam
+sim_run/50x_75/mapsplice_all/tmp/original/ori.filtered.canon.noncanon.junctions.txt
+write junc
+sort junc
+36672 junctions

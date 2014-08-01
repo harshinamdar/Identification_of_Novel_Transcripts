@@ -1,0 +1,29 @@
+init arguments
+init genomescan
+genome arguments initialized
+set chrom file
+1	0
+1	249250621
+initial time: 2.02
+fusion time: 0
+read island and directory time: 0.18
+fix hole
+sim_run/50x_75/mapsplice_all/tmp/double_anchored//1.txt
+double anchor time: 4.78
+fix tail
+base	1
+sort -k4,4n -S 3500000 -o sim_run/50x_75/mapsplice_all/tmp/single_anchored_tail//1.txt -T sim_run/50x_75/mapsplice_all/tmp/ sim_run/50x_75/mapsplice_all/tmp/single_anchored_tail//1.txt
+1
+islands: Y
+single anchor tail time: 49.95
+fix hmer
+base	1
+sort -k4,4n -S 3500000 -o sim_run/50x_75/mapsplice_all/tmp/single_anchored_middle//1.txt -T sim_run/50x_75/mapsplice_all/tmp/ sim_run/50x_75/mapsplice_all/tmp/single_anchored_middle//1.txt
+1
+islands: N
+single anchor middle time: 1.65
+fix head
+base	1
+sort -k5,5n -S 3500000 -o sim_run/50x_75/mapsplice_all/tmp/single_anchored_head//1.txt -T sim_run/50x_75/mapsplice_all/tmp/ sim_run/50x_75/mapsplice_all/tmp/single_anchored_head//1.txt
+islands: Y
+single anchor head time: 50.32

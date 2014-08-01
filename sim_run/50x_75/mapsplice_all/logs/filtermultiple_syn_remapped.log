@@ -1,0 +1,5 @@
+filter multiple mapped sim_run/50x_75/mapsplice_all/tmp/remap/syn_remapped.multiple.filter_canon.sam
+ReadSortedJunction
+FilterByMisMatch
+CalcFilterScore
+start select 

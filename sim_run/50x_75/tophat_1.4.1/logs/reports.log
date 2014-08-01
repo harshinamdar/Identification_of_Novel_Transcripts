@@ -1,0 +1,11 @@
+/home/seq/tools/installed/tophat-1.4.1.Linux_x86_64/tophat_reports: /lib64/libz.so.1: no version information available (required by /home/seq/tools/installed/tophat-1.4.1.Linux_x86_64/tophat_reports)
+tophat_reports v1.4.1 (exported)
+---------------------------------------
+[samopen] SAM header is present: 1 sequences.
+Loaded 2977 GFF junctions from sim_run/50x_75/tophat_1.4.1/tmp/1_500_no_novel.juncs.
+Loaded 4495 junctions
+Reporting final accepted alignments...done.
+Printing junction BED track...done
+Printing insertions...done
+Printing deletions...done
+Found 4309 junctions from happy spliced reads

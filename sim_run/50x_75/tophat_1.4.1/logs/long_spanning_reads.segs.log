@@ -1,0 +1,79 @@
+/home/seq/tools/installed/tophat-1.4.1.Linux_x86_64/long_spanning_reads: /lib64/libz.so.1: no version information available (required by /home/seq/tools/installed/tophat-1.4.1.Linux_x86_64/long_spanning_reads)
+long_spanning_reads v1.4.1 (exported)
+--------------------------------------------
+Opening sim_run/50x_75/tophat_1.4.1/tmp/right_kept_reads.m2g_um_seg1.bwtout.z for reading
+Opening sim_run/50x_75/tophat_1.4.1/tmp/right_kept_reads.m2g_um_seg2.bwtout.z for reading
+Opening sim_run/50x_75/tophat_1.4.1/tmp/right_kept_reads.m2g_um_seg3.bwtout.z for reading
+Opening sim_run/50x_75/tophat_1.4.1/tmp/right_kept_reads.m2g_um_seg1.to_spliced.bwtout.z for reading
+Opening sim_run/50x_75/tophat_1.4.1/tmp/right_kept_reads.m2g_um_seg2.to_spliced.bwtout.z for reading
+Opening sim_run/50x_75/tophat_1.4.1/tmp/right_kept_reads.m2g_um_seg3.to_spliced.bwtout.z for reading
+Loading reference sequences...
+        reference sequences loaded.
+Loading spliced hits...done
+Loading junctions...done
+Loading deletions...done
+Warning: multiple closures found for insertion read # 16012
+Warning: multiple closures found for insertion read # 16231
+Warning: multiple closures found for insertion read # 16672
+Warning: multiple closures found for insertion read # 16697
+Warning: multiple closures found for insertion read # 16822
+Warning: multiple closures found for insertion read # 16858
+Warning: multiple closures found for insertion read # 29049
+Warning: multiple closures found for insertion read # 29483
+Warning: multiple closures found for insertion read # 29698
+Warning: multiple closures found for insertion read # 35296
+Warning: multiple closures found for insertion read # 47185
+Warning: multiple closures found for insertion read # 50204
+Warning: multiple closures found for insertion read # 50221
+Warning: multiple closures found for insertion read # 54702
+Warning: multiple closures found for insertion read # 55893
+Warning: multiple closures found for insertion read # 59048
+Warning: multiple closures found for insertion read # 59164
+Warning: multiple closures found for insertion read # 63947
+Warning: multiple closures found for insertion read # 66255
+Warning: multiple closures found for insertion read # 71979
+Warning: multiple closures found for insertion read # 73781
+Warning: multiple closures found for insertion read # 79253
+Warning: multiple closures found for insertion read # 79314
+Warning: multiple closures found for insertion read # 80833
+Warning: multiple closures found for insertion read # 85075
+Warning: multiple closures found for insertion read # 85175
+Warning: multiple closures found for insertion read # 102790
+Warning: multiple closures found for insertion read # 104409
+Warning: multiple closures found for insertion read # 104550
+Warning: multiple closures found for insertion read # 112306
+Warning: multiple closures found for insertion read # 122360
+Warning: multiple closures found for insertion read # 142134
+Warning: multiple closures found for insertion read # 184025
+Warning: multiple closures found for insertion read # 184050
+Warning: multiple closures found for insertion read # 184571
+Warning: multiple closures found for insertion read # 184587
+Warning: multiple closures found for insertion read # 184775
+Warning: multiple closures found for insertion read # 186515
+Warning: multiple closures found for insertion read # 186746
+Warning: multiple closures found for insertion read # 187053
+Warning: multiple closures found for insertion read # 187593
+Warning: multiple closures found for insertion read # 187920
+Warning: multiple closures found for insertion read # 188178
+Warning: multiple closures found for insertion read # 198844
+Warning: multiple closures found for insertion read # 203763
+Warning: multiple closures found for insertion read # 203763
+Warning: multiple closures found for insertion read # 213565
+Warning: multiple closures found for insertion read # 241743
+Warning: multiple closures found for insertion read # 241799
+Warning: multiple closures found for insertion read # 241916
+Warning: multiple closures found for insertion read # 256124
+Warning: multiple closures found for insertion read # 271975
+Warning: multiple closures found for insertion read # 272180
+Warning: multiple closures found for insertion read # 273728
+Warning: multiple closures found for insertion read # 279950
+Warning: multiple closures found for insertion read # 280355
+Warning: multiple closures found for insertion read # 280494
+Warning: multiple closures found for insertion read # 281007
+Warning: multiple closures found for insertion read # 281545
+Warning: multiple closures found for insertion read # 281684
+Warning: multiple closures found for insertion read # 281876
+Warning: multiple closures found for insertion read # 349652
+Warning: multiple closures found for insertion read # 349711
+Warning: multiple closures found for insertion read # 425252
+Warning: multiple closures found for insertion read # 425252

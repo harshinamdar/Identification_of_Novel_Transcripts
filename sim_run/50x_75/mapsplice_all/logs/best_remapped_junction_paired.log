@@ -1,0 +1,6 @@
+=
+sim_run/50x_75/mapsplice_all/tmp/best/best_remapped.sam
+sim_run/50x_75/mapsplice_all/tmp/remap/best_remapped_junction_paired.txt
+write junc
+sort junc
+4264 junctions

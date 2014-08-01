@@ -1,0 +1,5 @@
+sim_run/50x_75/mapsplice_all/tmp/remap/syn_remapped.unique.sam
+sim_run/50x_75/mapsplice_all/tmp/remap/syn.remdup_filter_canon_all_junctions.txt
+write junc
+sort junc
+4972 junctions
