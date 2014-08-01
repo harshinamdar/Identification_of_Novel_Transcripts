@@ -135,14 +135,14 @@ Run Oases and Splign to generate `cdna.bed`
 
    Where 'k1' and 'k2' are the range of k-mers. Replace 'k1' and 'k2' with '21' and '43' for dataset with read    length 75 bp. Now,create oases directory for every kmer as follows :
 >
->       velvetg directory_k1 -read_trkg yes
->       oases directory_k1
+>       velvetg directory_k* -read_trkg yes
+>       oases directory_k*
 
-Merge assemblies into directory 'merged' using optimum K value = 27 
+After running the previous process for different values of k, merge the results of all non-redundant assemblies contained in transcripts.fa in directory 'merged' using optimum K value = 27 
 
->      velveth merged 27 -long directory*/transcripts.fa
->      velvetg merged -read_trkg yes -conserveLong yes
->      oases merged -merge
+>      velveth merged/ 27 -long directory*/transcripts.fa
+>      velvetg merged/ -read_trkg yes -conserveLong yes
+>      oases merged/ -merge
 
 
 ######     Splign :
