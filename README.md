@@ -127,10 +127,38 @@ Execute cufflinks to generate transcripts.gtf followed by cuffcompare to generat
 
 #### 3. cdna.bed :
 ---
+Run Oases and Splign to generate `cdna.bed`
+######     Oases :
+ 
+
+>      velveth directory k1,k2 data/reads.fa
+
+   Where 'k1' and 'k2' are the range of k-mers. Replace 'k1' and 'k2' with '21' and '43' for dataset with read    length 75 bp. Now,create oases directory for every kmer as follows :
+>
+>       velvetg directory_k1 -read_trkg yes
+>       oases directory_k1
+
+Merge assemblies into directory 'merged' using optimum K value = 27 
+
+>      velveth merged 27 -long directory*/transcripts.fa
+>      velvetg merged -read_trkg yes -conserveLong yes
+>      oases merged -merge
 
 
->     awk '{if($1>0 && $8 != "-"){ if($8 >$9){print $3"\t"$9"\t"$8"\t"$2"\t"1"\t+"}else{print $3"\t"$8"\t"$9"\t"$2"\t"1"\t+"}}}' $1 >cdna.bed
->     awk '{if($1<0 && $8 != "-"){ if($8 >$9){print $3"\t"$9"\t"$8"\t"$2"\t"1"\t-"}else{print $3"\t"$8"\t"$9"\t"$2"\t"1"\t-"}}}' $1 >>cdna.bed
+######     Splign :
+
+>     splign -mklds fasta_dir
+
+>     formatdb -pF -oT -i transcripts.fa 
+>     formatdb -pF -oT -i 1.fa   ## 1.fa is reference genome file used for simulated dataset 
+>     compart -qdb cdna.fa -sdb 1.fa > cdna.compartments
+
+>     splign -ldsdir fasta_dir -comps cdna.compartments 
+
+>     ==> Output : cdna.align
+
+>     awk '{if($1>0 && $8 != "-"){ if($8 >$9){print $3"\t"$9"\t"$8"\t"$2"\t"1"\t+"}else{print $3"\t"$8"\t"$9"\t"$2"\t"1"\t+"}}}' cdna.align >cdna.bed
+>     awk '{if($1<0 && $8 != "-"){ if($8 >$9){print $3"\t"$9"\t"$8"\t"$2"\t"1"\t-"}else{print $3"\t"$8"\t"$9"\t"$2"\t"1"\t-"}}}' cdna.align >>cdna.bed
 
 	
 	Output: cdna.bed
