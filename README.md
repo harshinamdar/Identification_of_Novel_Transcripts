@@ -155,9 +155,7 @@ After running the previous process for different values of k, merge the results 
 
 >     splign -ldsdir fasta_dir -comps cdna.compartments 
 
->     ==> Output : cdna.align
-
->     awk '{if($1>0 && $8 != "-"){ if($8 >$9){print $3"\t"$9"\t"$8"\t"$2"\t"1"\t+"}else{print $3"\t"$8"\t"$9"\t"$2"\t"1"\t+"}}}' cdna.align >cdna.bed
+>     awk '{if($1>0 && $8 != "-"){ if($8 >$9){print $3"\t"$9"\t"$8"\t"$2"\t"1"\t+"}else{print $3"\t"$8"\t"$9"\t"$2"\t"1"\t+"}}}' cdna.compartments >cdna.bed
 >     awk '{if($1<0 && $8 != "-"){ if($8 >$9){print $3"\t"$9"\t"$8"\t"$2"\t"1"\t-"}else{print $3"\t"$8"\t"$9"\t"$2"\t"1"\t-"}}}' cdna.align >>cdna.bed
 
 	
