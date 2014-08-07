@@ -20,7 +20,7 @@
 >      valid_oases_transcripts  ## oases assembled de Novo transcripts that have evidence from common_OP but NOT cufflinks.
 
 - - -
-### Generating Input files for `analyze_novel_transcript.pl` :
+### Generating Input files for `analyze_novel_tr.pl` :
 
 #### 1.  common_OP.bed:
 ---
