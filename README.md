@@ -1,3 +1,6 @@
+
+## Project : Identification_of_Novel_transcripts
+
 ### Retrival of Novel Transcripts:
 - To retrive *true novel transcripts* from RNA-Seq dataset use the perl script `analyze_novel_tr.pl`
 - `analyze_novel_tr.pl` requires TopHat executable `gtf_juncs`set in the enviornment 
@@ -17,7 +20,7 @@
 >      valid_oases_transcripts  ## oases assembled de Novo transcripts that have evidence from common_OP but NOT cufflinks.
 
 - - -
-### Generating Input files for `analyze_novel_transcript.pl` :
+### Generating Input files for `analyze_novel_tr.pl` :
 
 #### 1.  common_OP.bed:
 ---
@@ -124,13 +127,40 @@ Execute cufflinks to generate transcripts.gtf followed by cuffcompare to generat
 
 #### 3. cdna.bed :
 ---
+Run Oases and Splign to generate `cdna.bed`
+######     Oases :
+ 
+
+>      velveth directory k1,k2 data/reads.fa
+
+   Where 'k1' and 'k2' are the range of k-mers. Replace 'k1' and 'k2' with '21' and '43' for dataset with read    length 75 bp. Now,create oases directory for every kmer as follows :
+>
+>       velvetg directory_k* -read_trkg yes
+>       oases directory_k*
+
+After running the previous process for different values of k, merge the results of all non-redundant assemblies contained in transcripts.fa in directory 'merged' using optimum K value = 27 
+
+>      velveth merged/ 27 -long directory*/transcripts.fa
+>      velvetg merged/ -read_trkg yes -conserveLong yes
+>      oases merged/ -merge
 
 
->     awk '{if($1>0 && $8 != "-"){ if($8 >$9){print $3"\t"$9"\t"$8"\t"$2"\t"1"\t+"}else{print $3"\t"$8"\t"$9"\t"$2"\t"1"\t+"}}}' $1 >cdna.bed
->     awk '{if($1<0 && $8 != "-"){ if($8 >$9){print $3"\t"$9"\t"$8"\t"$2"\t"1"\t-"}else{print $3"\t"$8"\t"$9"\t"$2"\t"1"\t-"}}}' $1 >>cdna.bed
+######     Splign :
+
+>     splign -mklds fasta_dir
+
+>     formatdb -pF -oT -i transcripts.fa 
+>     formatdb -pF -oT -i 1.fa   ## 1.fa is reference genome file used for simulated dataset 
+>     compart -qdb cdna.fa -sdb 1.fa > cdna.compartments
+
+>     splign -ldsdir fasta_dir -comps cdna.compartments 
+
+>     awk '{if($1>0 && $8 != "-"){ if($8 >$9){print $3"\t"$9"\t"$8"\t"$2"\t"1"\t+"}else{print $3"\t"$8"\t"$9"\t"$2"\t"1"\t+"}}}' cdna.compartments >cdna.bed
+>     awk '{if($1<0 && $8 != "-"){ if($8 >$9){print $3"\t"$9"\t"$8"\t"$2"\t"1"\t-"}else{print $3"\t"$8"\t"$9"\t"$2"\t"1"\t-"}}}' cdna.compartments >>cdna.bed
 
 	
 	Output: cdna.bed
 
 - - -
+
 
