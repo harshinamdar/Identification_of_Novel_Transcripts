@@ -1,6 +1,9 @@
 
 ## Project : Identification_of_Novel_transcripts
 
+
+![alt tag](https://raw.githubusercontent.com/harshinamdar/Identification_of_Novel_Transcripts/master/workfkow.jpg)
+
 ### Retrival of Novel Transcripts:
 - To retrive *true novel transcripts* from RNA-Seq dataset use the perl script `analyze_novel_tr.pl`
 - `analyze_novel_tr.pl` requires TopHat executable `gtf_juncs`set in the enviornment 
